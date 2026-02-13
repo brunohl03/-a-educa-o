@@ -1,4 +1,4 @@
-﻿# 🏠 Página Inicial — home.feature
+﻿#  Página Inicial — home.feature
 
 Nenhum bug funcional identificado durante a exploração da funcionalidade.
 
