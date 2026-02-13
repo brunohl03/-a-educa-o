@@ -249,3 +249,28 @@ Resultado obtido:
 -Nenhum botão de retorno disponível
 -Ausência de mensagem amigável ao usuário
 -Problema reproduzido em Chrome, Edge e Firefox
+
+
+
+
+BUG 009 — Área do candidato não possui botão de logout
+
+Severidade: Média
+
+Descrição:
+A área do candidato não apresenta opção visível de logout, impedindo que o usuário finalize a sessão de forma segura e controlada dentro da interface do sistema.
+
+Passos para reproduzir:
+1.Realizar login com usuário válido
+2.Acessar a área do candidato
+3.Procurar opção de logout ou sair da conta
+
+Resultado esperado:
+-Deveria existir botão ou opção de logout visível
+-Usuário deveria conseguir encerrar a sessão manualmente
+-Sistema deveria redirecionar para tela inicial ou login após logout
+
+Resultado obtido:
+-Não existe botão ou opção de logout disponível
+-Usuário permanece autenticado sem opção de saída pela interface
+-Encerramento da sessão só é possível fechando o navegador ou limpando sessão
