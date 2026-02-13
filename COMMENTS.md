@@ -1,5 +1,4 @@
 
-
 ## Decisões de Arquitetura
 
 O projeto foi estruturado utilizando .NET 8 com Reqnroll e NUnit para documentação e futura automação dos cenários de testes.
@@ -100,6 +99,21 @@ Esses itens fazem parte das etapas diferenciais do desafio.
 
 ------------------------------------------------------------
 
+## Dificuldades Encontradas
+
+A principal dificuldade durante o desenvolvimento do desafio esteve relacionada à utilização de ferramentas e tecnologias que ainda não faziam parte do meu fluxo habitual de trabalho.
+
+Este foi meu primeiro contato prático com o ecossistema .NET e com o Visual Studio, considerando que minha experiência anterior sempre esteve mais concentrada no uso do VS Code e em automações utilizando Playwright. Além disso, também foi a primeira vez estruturando testes com Reqnroll e iniciando a construção de automações utilizando Selenium dentro desse modelo arquitetural.
+
+Outro ponto de adaptação foi o contato inicial com ferramentas e abordagens voltadas para testes de performance, exigindo estudo paralelo para compreensão de conceitos, estrutura de projetos e melhores práticas.
+
+Apesar do cenário novo em termos de ferramentas, utilizei minha base sólida em qualidade de software, testes exploratórios e automação para acelerar o processo de aprendizado, conseguindo estruturar corretamente os cenários, organização do projeto e preparação para evolução das automações e testes de carga.
+
+O desafio foi conduzido com foco em adaptação rápida, aprendizado contínuo e aplicação consistente de boas práticas de qualidade, independentemente da tecnologia utilizada.
+
+------------------------------------------------------------
+
 ## Considerações Finais
 
 O projeto foi estruturado com foco em organização, clareza e preparação para evolução futura em automação e testes de performance, mantendo aderência às boas práticas de qualidade de software e escrita de cenários orientados ao comportamento do usuário.
+
