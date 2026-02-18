@@ -1,38 +1,38 @@
-#language: pt
+Ôªø#language: pt
 
 @chrome @edge @firefox
-Funcionalidade: Dashboard da ·rea do candidato
+Funcionalidade: Dashboard da √°rea do candidato
 
   Como candidato autenticado
-  Eu quero visualizar minhas informaÁıes
-  Para acompanhar minha inscriÁ„o
+  Eu quero visualizar minhas informa√ß√µes
+  Para acompanhar minha inscri√ß√£o
 
-  Cen·rio: Acessar dashboard apÛs login
-    Dado que o usu·rio realizou login com sucesso
-    Ent„o deve visualizar a mensagem de boas-vindas
+  Cen√°rio: Acessar dashboard ap√≥s login
+    Dado que o usu√°rio realizou login com sucesso
+    Ent√£o deve visualizar a mensagem de boas-vindas
     E deve visualizar o menu lateral
-    E deve visualizar as opÁıes "Minhas inscriÁıes" e "Financeiro"
+    E deve visualizar as op√ß√µes "Minhas inscri√ß√µes" e "Financeiro"
 
-  Cen·rio: Visualizar campo de busca
-    Dado que o usu·rio est· no dashboard
-    Ent„o deve visualizar o campo de pesquisa
+  Cen√°rio: Visualizar campo de busca
+    Dado que o usu√°rio est√° no dashboard
+    Ent√£o deve visualizar o campo de pesquisa
 
-  Cen·rio: Navegar para Minhas inscriÁıes
-    Dado que o usu·rio est· no dashboard
-    Quando clica em "Minhas inscriÁıes"
-    Ent„o deve acessar a ·rea de inscriÁıes
-    E deve ter bot„o "voltar para home"
-    Ent„o deve ser possÌvel retornar ao "home"
+  Cen√°rio: Navegar para Minhas inscri√ß√µes
+    Dado que o usu√°rio est√° no dashboard
+    Quando clica em "Minhas inscri√ß√µes"
+    Ent√£o deve acessar a √°rea de inscri√ß√µes
+    E deve ter bot√£o "voltar para home"
+    Ent√£o deve ser poss√≠vel retornar ao "home"
 
-  Cen·rio: Navegar para Financeiro
-    Dado que o usu·rio est· no dashboard
+  Cen√°rio: Navegar para Financeiro
+    Dado que o usu√°rio est√° no dashboard
     Quando clica em "Financeiro"
-    Ent„o deve acessar a ·rea financeira
-    E deve ter bot„o "voltar para home"
-    Ent„o deve ser possÌvel retornar ao "home"
+    Ent√£o deve acessar a √°rea financeira
+    E deve ter bot√£o "voltar para home"
+    Ent√£o deve ser poss√≠vel retornar ao "home"
 
-  Cen·rio: Utilizar campo de pesquisa
-    Dado que o usu·rio est· no dashboard
+  Cen√°rio: Utilizar campo de pesquisa
+    Dado que o usu√°rio est√° no dashboard
     Quando informa um termo no campo de pesquisa
-    Ent„o deve visualizar resultados relacionados
+    Ent√£o deve visualizar resultados relacionados
 

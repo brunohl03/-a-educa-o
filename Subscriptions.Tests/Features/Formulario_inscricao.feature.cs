@@ -18,12 +18,12 @@ namespace Subscriptions.Tests.Features
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Reqnroll", "3.0.0.0")]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::NUnit.Framework.TestFixtureAttribute()]
-    [global::NUnit.Framework.DescriptionAttribute("Preenchimento do formul�rio de inscri��o")]
+    [global::NUnit.Framework.DescriptionAttribute("Preenchimento do formulário de inscrição")]
     [global::NUnit.Framework.FixtureLifeCycleAttribute(global::NUnit.Framework.LifeCycle.InstancePerTestCase)]
     [global::NUnit.Framework.CategoryAttribute("chrome")]
     [global::NUnit.Framework.CategoryAttribute("edge")]
     [global::NUnit.Framework.CategoryAttribute("firefox")]
-    public partial class PreenchimentoDoFormulRioDeInscriOFeature
+    public partial class PreenchimentoDoFormularioDeInscricaoFeature
     {
         
         private global::Reqnroll.ITestRunner testRunner;
@@ -33,99 +33,8 @@ namespace Subscriptions.Tests.Features
                 "edge",
                 "firefox"};
         
-        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new global::System.Globalization.CultureInfo("pt"), "Features", "Preenchimento do formul�rio de inscri��o", "  Como candidato\r\n  Eu quero preencher meus dados pessoais e de contato\r\n  Para p" +
-                "rosseguir com minha inscri��o\r\n\r\n  Cen�rio: Visualizar formul�rio de inscri��o\r\n" +
-                "    Dado que o usu�rio avan�ou ap�s selecionar um curso\r\n    Ent�o deve visualiz" +
-                "ar a se��o \"Dados pessoais\"\r\n    E deve visualizar os campos CPF, Nome, Sobrenom" +
-                "e e Data de nascimento\r\n    E deve visualizar a se��o \"Contato\"\r\n    E deve visu" +
-                "alizar os campos Email, Celular e Telefone\r\n    E deve visualizar a se��o \"Ender" +
-                "e�o\"\r\n    E deve visualizar campos de endere�o\r\n    E deve visualizar o bot�o \"V" +
-                "oltar\"\r\n    E deve visualizar o bot�o \"Avan�ar\"\r\n    E deve visualizar bot�o Pri" +
-                "vacidade\r\n    E deve visualizar bot�o home\r\n    E deve visualizar op��es de tema" +
-                "\r\n    E deve visualizar logotipo +a\r\n    E deve visualizar bot�o Portal de inscr" +
-                "i��es\r\n\r\n  Cen�rio: Tentar avan�ar com formul�rio vazio\r\n    Dado que o usu�rio " +
-                "est� no formul�rio de inscri��o\r\n    Quando clica em \"Avan�ar\" sem preencher os " +
-                "campos obrigat�rios\r\n    Ent�o deve visualizar mensagens de valida��o nos campos" +
-                " obrigat�rios\r\n\r\n  Cen�rio: Preencher formul�rio com dados v�lidos\r\n    Dado que" +
-                " o usu�rio est� no formul�rio de inscri��o\r\n    Quando preenche todos os campos " +
-                "obrigat�rios corretamente\r\n    E clica em \"Avan�ar\"\r\n    Ent�o deve avan�ar para" +
-                " a pr�xima etapa da inscri��o\r\n\r\n  Cen�rio: Preencher CPF em formato inv�lido\r\n " +
-                "   Dado que o usu�rio est� no formul�rio de inscri��o\r\n    Quando informa um CPF" +
-                " em formato inv�lido\r\n    Ent�o deve visualizar mensagem de erro no campo CPF\r\n\r" +
-                "\n  Cen�rio: Preencher email inv�lido\r\n    Dado que o usu�rio est� no formul�rio " +
-                "de inscri��o\r\n    Quando informa um email em formato inv�lido\r\n    Ent�o deve vi" +
-                "sualizar mensagem de erro no campo Email\r\n\r\n  Cen�rio: Preencher telefone em for" +
-                "mato inv�lido\r\n    Dado que o usu�rio est� no formul�rio de inscri��o\r\n    Quand" +
-                "o informa um telefone em formato inv�lido\r\n    Ent�o deve visualizar mensagem de" +
-                " erro no campo Telefone\r\n\r\n  Cen�rio: Preencher data de nascimento inv�lida\r\n   " +
-                " Dado que o usu�rio est� no formul�rio de inscri��o\r\n    Quando informa uma data" +
-                " de nascimento inv�lida\r\n    Ent�o deve visualizar mensagem de erro no campo Dat" +
-                "a de nascimento\r\n\r\n  Cen�rio: Preencher CEP em formato inv�lido\r\n    Dado que o " +
-                "usu�rio est� no formul�rio de inscri��o\r\n    Quando informa um CEP em formato in" +
-                "v�lido\r\n    Ent�o deve visualizar mensagem de erro no campo CEP\r\n\r\n  Cen�rio: Ma" +
-                "rcar op��o possui defici�ncia\r\n    Dado que o usu�rio est� no formul�rio de insc" +
-                "ri��o\r\n    Quando marca a op��o \"Possui alguma defici�ncia?\"\r\n    Ent�o o sistem" +
-                "a deve registrar a escolha do usu�rio\r\n\r\n  Cen�rio: Navegar para tela anterior\r\n" +
-                "    Dado que o usu�rio est� no formul�rio de inscri��o\r\n    Quando clica no bot�" +
-                "o \"Voltar\"\r\n    Ent�o deve retornar para a tela anterior da inscri��o\r\n\r\n  Cen�r" +
-                "io: Preencher parcialmente o formul�rio\r\n    Dado que o usu�rio est� no formul�r" +
-                "io de inscri��o\r\n    Quando preenche apenas alguns campos obrigat�rios\r\n    E te" +
-                "nta avan�ar\r\n    Ent�o deve visualizar quais campos obrigat�rios n�o foram preen" +
-                "chidos\r\n\r\n  Cen�rio: Inserir caracteres especiais em campos de texto\r\n    Dado q" +
-                "ue o usu�rio est� no formul�rio de inscri��o\r\n    Quando insere caracteres inv�l" +
-                "idos em campos de texto\r\n    Ent�o deve visualizar mensagem de valida��o\r\n\r\n  Ce" +
-                "n�rio: Informar CPF com mais de 12 caracteres\r\n    Dado que o usu�rio est� no fo" +
-                "rmul�rio de inscri��o\r\n    Quando informa um CPF com mais de 12 caracteres\r\n    " +
-                "Ent�o o sistema deve impedir a digita��o adicional ou exibir valida��o de limite" +
-                " m�ximo\r\n\r\n  Cen�rio: Informar CPF com quantidade m�xima permitida\r\n    Dado que" +
-                " o usu�rio est� no formul�rio de inscri��o\r\n    Quando informa um CPF com at� 12" +
-                " caracteres\r\n    Ent�o o sistema deve aceitar o valor informado\r\n\r\n  Cen�rio: In" +
-                "formar telefone com menos de 10 caracteres\r\n    Dado que o usu�rio est� no formu" +
-                "l�rio de inscri��o\r\n    Quando informa um telefone com menos de 10 caracteres\r\n " +
-                "   E tenta avan�ar\r\n    Ent�o deve visualizar mensagem informando quantidade m�n" +
-                "ima inv�lida\r\n\r\n  Cen�rio: Informar telefone com mais de 15 caracteres\r\n    Dado" +
-                " que o usu�rio est� no formul�rio de inscri��o\r\n    Quando informa um telefone c" +
-                "om mais de 15 caracteres\r\n    Ent�o o sistema deve impedir a digita��o adicional" +
-                " ou exibir valida��o de limite m�ximo\r\n\r\n  Cen�rio: Informar telefone dentro do " +
-                "limite permitido\r\n    Dado que o usu�rio est� no formul�rio de inscri��o\r\n    Qu" +
-                "ando informa um telefone entre 10 e 15 caracteres\r\n    Ent�o o sistema deve acei" +
-                "tar o valor informado\r\n\r\n  Cen�rio: Informar telefone com letras\r\n    Dado que o" +
-                " usu�rio est� no formul�rio de inscri��o\r\n    Quando informa letras no campo Tel" +
-                "efone\r\n    Ent�o deve visualizar mensagem de valida��o informando que apenas n�m" +
-                "eros s�o permitidos\r\n\r\n  Cen�rio: Informar telefone com caracteres especiais\r\n  " +
-                "  Dado que o usu�rio est� no formul�rio de inscri��o\r\n    Quando informa caracte" +
-                "res especiais no campo Telefone\r\n    Ent�o deve visualizar mensagem de valida��o" +
-                " informando que apenas n�meros s�o permitidos\r\n\r\n  Cen�rio: Informar telefone co" +
-                "ntendo n�meros e letras\r\n    Dado que o usu�rio est� no formul�rio de inscri��o\r" +
-                "\n    Quando informa n�meros e letras no campo Telefone\r\n    Ent�o deve visualiza" +
-                "r mensagem de valida��o no campo Telefone\r\n\r\n  Cen�rio: Informar telefone apenas" +
-                " com n�meros\r\n    Dado que o usu�rio est� no formul�rio de inscri��o\r\n    Quando" +
-                " informa um telefone contendo apenas n�meros\r\n    Ent�o o sistema deve aceitar o" +
-                " valor informado\r\n\r\n  Cen�rio: Informar CEP com menos de 8 n�meros\r\n    Dado que" +
-                " o usu�rio est� no formul�rio de inscri��o\r\n    Quando informa um CEP com menos " +
-                "de 8 n�meros\r\n    E tenta avan�ar\r\n    Ent�o deve visualizar mensagem de valida�" +
-                "�o de quantidade inv�lida\r\n\r\n  Cen�rio: Informar CEP com mais de 8 n�meros\r\n    " +
-                "Dado que o usu�rio est� no formul�rio de inscri��o\r\n    Quando informa um CEP co" +
-                "m mais de 8 n�meros\r\n    Ent�o o sistema deve impedir a digita��o adicional ou e" +
-                "xibir valida��o de limite m�ximo\r\n\r\n  Cen�rio: Informar CEP com exatamente 8 n�m" +
-                "eros\r\n    Dado que o usu�rio est� no formul�rio de inscri��o\r\n    Quando informa" +
-                " um CEP com 8 n�meros\r\n    Ent�o o sistema deve aceitar o valor informado\r\n\r\n  C" +
-                "en�rio: Informar CEP com caracteres n�o num�ricos\r\n    Dado que o usu�rio est� n" +
-                "o formul�rio de inscri��o\r\n    Quando informa letras ou caracteres especiais no " +
-                "campo CEP\r\n    Ent�o deve visualizar mensagem de valida��o informando que apenas" +
-                " n�meros s�o permitidos\r\n\r\n  Cen�rio: Informar data de nascimento exatamente em " +
-                "1880\r\n    Dado que o usu�rio est� no formul�rio de inscri��o\r\n    Quando informa" +
-                " uma data de nascimento no ano de 1880\r\n    Ent�o o sistema deve aceitar a data " +
-                "informada\r\n\r\n  Cen�rio: Selecionar data inv�lida pelo calend�rio\r\n    Dado que o" +
-                " usu�rio est� no formul�rio de inscri��o\r\n    Quando tenta selecionar uma data a" +
-                "nterior a 1880 pelo calend�rio\r\n    Ent�o o sistema n�o deve permitir a sele��o " +
-                "da data\r\n\r\n  Cen�rio: Digitar manualmente data anterior a 1880\r\n    Dado que o u" +
-                "su�rio est� no formul�rio de inscri��o\r\n    Quando digita manualmente uma data a" +
-                "nterior a 1880\r\n    E tenta avan�ar\r\n    Ent�o deve visualizar mensagem de valid" +
-                "a��o no campo Data de nascimento", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags, InitializeCucumberMessages());
-        
-#line 1 "Formulario_inscricao.feature"
-#line hidden
+        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new global::System.Globalization.CultureInfo("pt"), "Features", "Preenchimento do formulário de inscrição", "  Como candidato\r\n  Eu quero preencher meus dados pessoais e de contato\r\n  Para p" +
+                "rosseguir com minha inscrição", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags, InitializeCucumberMessages());
         
         [global::NUnit.Framework.OneTimeSetUpAttribute()]
         public static async global::System.Threading.Tasks.Task FeatureSetupAsync()
@@ -200,7 +109,729 @@ namespace Subscriptions.Tests.Features
         
         private static global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages InitializeCucumberMessages()
         {
-            return new global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages("Features/Formulario_inscricao.feature.ndjson", 2);
+            return new global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages("Features/Formulario_inscricao.feature.ndjson", 30);
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Visualizar formulário de inscrição")]
+        public async global::System.Threading.Tasks.Task VisualizarFormularioDeInscricao()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "0";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Visualizar formulário de inscrição", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário avançou após selecionar um curso", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.ThenAsync("deve visualizar a seção \"Dados pessoais\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+                await testRunner.AndAsync("deve visualizar os campos CPF, Nome, Sobrenome e Data de nascimento", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("deve visualizar a seção \"Contato\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("deve visualizar os campos Email, Celular e Telefone", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("deve visualizar a seção \"Endereço\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("deve visualizar campos de endereço", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("deve visualizar o botão \"Voltar\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("deve visualizar o botão \"Avançar\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("deve visualizar botão Privacidade", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("deve visualizar botão home", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("deve visualizar opções de tema", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("deve visualizar logotipo +a", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("deve visualizar botão Portal de inscrições", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Tentar avançar com formulário vazio")]
+        public async global::System.Threading.Tasks.Task TentarAvancarComFormularioVazio()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "1";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Tentar avançar com formulário vazio", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("clica em \"Avançar\" sem preencher os campos obrigatórios", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("deve visualizar mensagens de validação nos campos obrigatórios", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Preencher formulário com dados válidos")]
+        public async global::System.Threading.Tasks.Task PreencherFormularioComDadosValidos()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "2";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Preencher formulário com dados válidos", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("preenche todos os campos obrigatórios corretamente", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.AndAsync("clica em \"Avançar\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.ThenAsync("deve avançar para a próxima etapa da inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Preencher CPF em formato inválido")]
+        public async global::System.Threading.Tasks.Task PreencherCPFEmFormatoInvalido()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "3";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Preencher CPF em formato inválido", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("informa um CPF em formato inválido", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("deve visualizar mensagem de erro no campo CPF", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Preencher email inválido")]
+        public async global::System.Threading.Tasks.Task PreencherEmailInvalido()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "4";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Preencher email inválido", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("informa um email em formato inválido", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("deve visualizar mensagem de erro no campo Email", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Preencher telefone em formato inválido")]
+        public async global::System.Threading.Tasks.Task PreencherTelefoneEmFormatoInvalido()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "5";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Preencher telefone em formato inválido", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("informa um telefone em formato inválido", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("deve visualizar mensagem de erro no campo Telefone", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Preencher data de nascimento inválida")]
+        public async global::System.Threading.Tasks.Task PreencherDataDeNascimentoInvalida()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "6";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Preencher data de nascimento inválida", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("informa uma data de nascimento inválida", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("deve visualizar mensagem de erro no campo Data de nascimento", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Preencher CEP em formato inválido")]
+        public async global::System.Threading.Tasks.Task PreencherCEPEmFormatoInvalido()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "7";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Preencher CEP em formato inválido", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("informa um CEP em formato inválido", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("deve visualizar mensagem de erro no campo CEP", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Marcar opção possui deficiência")]
+        public async global::System.Threading.Tasks.Task MarcarOpcaoPossuiDeficiencia()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "8";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Marcar opção possui deficiência", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("marca a opção \"Possui alguma deficiência?\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("o sistema deve registrar a escolha do usuário", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Navegar para tela anterior")]
+        public async global::System.Threading.Tasks.Task NavegarParaTelaAnterior()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "9";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Navegar para tela anterior", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("clica no botão \"Voltar\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("deve retornar para a tela anterior da inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Preencher parcialmente o formulário")]
+        public async global::System.Threading.Tasks.Task PreencherParcialmenteOFormulario()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "10";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Preencher parcialmente o formulário", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("preenche apenas alguns campos obrigatórios", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.AndAsync("tenta avançar", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.ThenAsync("deve visualizar quais campos obrigatórios não foram preenchidos", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Inserir caracteres especiais em campos de texto")]
+        public async global::System.Threading.Tasks.Task InserirCaracteresEspeciaisEmCamposDeTexto()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "11";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Inserir caracteres especiais em campos de texto", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("insere caracteres inválidos em campos de texto", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("deve visualizar mensagem de validação", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Informar CPF com mais de 12 caracteres")]
+        public async global::System.Threading.Tasks.Task InformarCPFComMaisDe12Caracteres()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "12";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Informar CPF com mais de 12 caracteres", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("informa um CPF com mais de 12 caracteres", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("o sistema deve impedir a digitação adicional ou exibir validação de limite máximo" +
+                        "", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Informar CPF com quantidade máxima permitida")]
+        public async global::System.Threading.Tasks.Task InformarCPFComQuantidadeMaximaPermitida()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "13";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Informar CPF com quantidade máxima permitida", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("informa um CPF com até 12 caracteres", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("o sistema deve aceitar o valor informado", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Informar telefone com menos de 10 caracteres")]
+        public async global::System.Threading.Tasks.Task InformarTelefoneComMenosDe10Caracteres()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "14";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Informar telefone com menos de 10 caracteres", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("informa um telefone com menos de 10 caracteres", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.AndAsync("tenta avançar", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.ThenAsync("deve visualizar mensagem informando quantidade mínima inválida", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Informar telefone com mais de 15 caracteres")]
+        public async global::System.Threading.Tasks.Task InformarTelefoneComMaisDe15Caracteres()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "15";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Informar telefone com mais de 15 caracteres", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("informa um telefone com mais de 15 caracteres", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("o sistema deve impedir a digitação adicional ou exibir validação de limite máximo" +
+                        "", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Informar telefone dentro do limite permitido")]
+        public async global::System.Threading.Tasks.Task InformarTelefoneDentroDoLimitePermitido()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "16";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Informar telefone dentro do limite permitido", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("informa um telefone entre 10 e 15 caracteres", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("o sistema deve aceitar o valor informado", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Informar telefone com letras")]
+        public async global::System.Threading.Tasks.Task InformarTelefoneComLetras()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "17";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Informar telefone com letras", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("informa letras no campo Telefone", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("deve visualizar mensagem de validação informando que apenas números são permitido" +
+                        "s", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Informar telefone com caracteres especiais")]
+        public async global::System.Threading.Tasks.Task InformarTelefoneComCaracteresEspeciais()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "18";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Informar telefone com caracteres especiais", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("informa caracteres especiais no campo Telefone", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("deve visualizar mensagem de validação informando que apenas números são permitido" +
+                        "s", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Informar telefone contendo números e letras")]
+        public async global::System.Threading.Tasks.Task InformarTelefoneContendoNumerosELetras()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "19";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Informar telefone contendo números e letras", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("informa números e letras no campo Telefone", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("deve visualizar mensagem de validação no campo Telefone", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Informar telefone apenas com números")]
+        public async global::System.Threading.Tasks.Task InformarTelefoneApenasComNumeros()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "20";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Informar telefone apenas com números", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("informa um telefone contendo apenas números", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("o sistema deve aceitar o valor informado", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Informar CEP com menos de 8 números")]
+        public async global::System.Threading.Tasks.Task InformarCEPComMenosDe8Numeros()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "21";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Informar CEP com menos de 8 números", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("informa um CEP com menos de 8 números", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.AndAsync("tenta avançar", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.ThenAsync("deve visualizar mensagem de validação de quantidade inválida", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Informar CEP com mais de 8 números")]
+        public async global::System.Threading.Tasks.Task InformarCEPComMaisDe8Numeros()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "22";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Informar CEP com mais de 8 números", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("informa um CEP com mais de 8 números", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("o sistema deve impedir a digitação adicional ou exibir validação de limite máximo" +
+                        "", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Informar CEP com exatamente 8 números")]
+        public async global::System.Threading.Tasks.Task InformarCEPComExatamente8Numeros()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "23";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Informar CEP com exatamente 8 números", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("informa um CEP com 8 números", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("o sistema deve aceitar o valor informado", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Informar CEP com caracteres não numéricos")]
+        public async global::System.Threading.Tasks.Task InformarCEPComCaracteresNaoNumericos()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "24";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Informar CEP com caracteres não numéricos", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("informa letras ou caracteres especiais no campo CEP", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("deve visualizar mensagem de validação informando que apenas números são permitido" +
+                        "s", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Informar data de nascimento exatamente em 1880")]
+        public async global::System.Threading.Tasks.Task InformarDataDeNascimentoExatamenteEm1880()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "25";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Informar data de nascimento exatamente em 1880", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("informa uma data de nascimento no ano de 1880", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("o sistema deve aceitar a data informada", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Selecionar data inválida pelo calendário")]
+        public async global::System.Threading.Tasks.Task SelecionarDataInvalidaPeloCalendario()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "26";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Selecionar data inválida pelo calendário", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("tenta selecionar uma data anterior a 1880 pelo calendário", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("o sistema não deve permitir a seleção da data", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Digitar manualmente data anterior a 1880")]
+        public async global::System.Threading.Tasks.Task DigitarManualmenteDataAnteriorA1880()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "27";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Digitar manualmente data anterior a 1880", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("digita manualmente uma data anterior a 1880", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.AndAsync("tenta avançar", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.ThenAsync("deve visualizar mensagem de validação no campo Data de nascimento", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
         }
     }
 }

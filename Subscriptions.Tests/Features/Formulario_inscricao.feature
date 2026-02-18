@@ -1,164 +1,164 @@
-#language: pt
+Ôªø#language: pt
 
 @chrome @edge @firefox
-Funcionalidade: Preenchimento do formul·rio de inscriÁ„o
+Funcionalidade: Preenchimento do formul√°rio de inscri√ß√£o
 
   Como candidato
   Eu quero preencher meus dados pessoais e de contato
-  Para prosseguir com minha inscriÁ„o
+  Para prosseguir com minha inscri√ß√£o
 
-  Cen·rio: Visualizar formul·rio de inscriÁ„o
-    Dado que o usu·rio avanÁou apÛs selecionar um curso
-    Ent„o deve visualizar a seÁ„o "Dados pessoais"
+  Cen√°rio: Visualizar formul√°rio de inscri√ß√£o
+    Dado que o usu√°rio avan√ßou ap√≥s selecionar um curso
+    Ent√£o deve visualizar a se√ß√£o "Dados pessoais"
     E deve visualizar os campos CPF, Nome, Sobrenome e Data de nascimento
-    E deve visualizar a seÁ„o "Contato"
+    E deve visualizar a se√ß√£o "Contato"
     E deve visualizar os campos Email, Celular e Telefone
-    E deve visualizar a seÁ„o "EndereÁo"
-    E deve visualizar campos de endereÁo
-    E deve visualizar o bot„o "Voltar"
-    E deve visualizar o bot„o "AvanÁar"
-    E deve visualizar bot„o Privacidade
-    E deve visualizar bot„o home
-    E deve visualizar opÁıes de tema
+    E deve visualizar a se√ß√£o "Endere√ßo"
+    E deve visualizar campos de endere√ßo
+    E deve visualizar o bot√£o "Voltar"
+    E deve visualizar o bot√£o "Avan√ßar"
+    E deve visualizar bot√£o Privacidade
+    E deve visualizar bot√£o home
+    E deve visualizar op√ß√µes de tema
     E deve visualizar logotipo +a
-    E deve visualizar bot„o Portal de inscriÁıes
+    E deve visualizar bot√£o Portal de inscri√ß√µes
 
-  Cen·rio: Tentar avanÁar com formul·rio vazio
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
-    Quando clica em "AvanÁar" sem preencher os campos obrigatÛrios
-    Ent„o deve visualizar mensagens de validaÁ„o nos campos obrigatÛrios
+  Cen√°rio: Tentar avan√ßar com formul√°rio vazio
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
+    Quando clica em "Avan√ßar" sem preencher os campos obrigat√≥rios
+    Ent√£o deve visualizar mensagens de valida√ß√£o nos campos obrigat√≥rios
 
-  Cen·rio: Preencher formul·rio com dados v·lidos
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
-    Quando preenche todos os campos obrigatÛrios corretamente
-    E clica em "AvanÁar"
-    Ent„o deve avanÁar para a prÛxima etapa da inscriÁ„o
+  Cen√°rio: Preencher formul√°rio com dados v√°lidos
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
+    Quando preenche todos os campos obrigat√≥rios corretamente
+    E clica em "Avan√ßar"
+    Ent√£o deve avan√ßar para a pr√≥xima etapa da inscri√ß√£o
 
-  Cen·rio: Preencher CPF em formato inv·lido
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
-    Quando informa um CPF em formato inv·lido
-    Ent„o deve visualizar mensagem de erro no campo CPF
+  Cen√°rio: Preencher CPF em formato inv√°lido
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
+    Quando informa um CPF em formato inv√°lido
+    Ent√£o deve visualizar mensagem de erro no campo CPF
 
-  Cen·rio: Preencher email inv·lido
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
-    Quando informa um email em formato inv·lido
-    Ent„o deve visualizar mensagem de erro no campo Email
+  Cen√°rio: Preencher email inv√°lido
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
+    Quando informa um email em formato inv√°lido
+    Ent√£o deve visualizar mensagem de erro no campo Email
 
-  Cen·rio: Preencher telefone em formato inv·lido
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
-    Quando informa um telefone em formato inv·lido
-    Ent„o deve visualizar mensagem de erro no campo Telefone
+  Cen√°rio: Preencher telefone em formato inv√°lido
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
+    Quando informa um telefone em formato inv√°lido
+    Ent√£o deve visualizar mensagem de erro no campo Telefone
 
-  Cen·rio: Preencher data de nascimento inv·lida
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
-    Quando informa uma data de nascimento inv·lida
-    Ent„o deve visualizar mensagem de erro no campo Data de nascimento
+  Cen√°rio: Preencher data de nascimento inv√°lida
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
+    Quando informa uma data de nascimento inv√°lida
+    Ent√£o deve visualizar mensagem de erro no campo Data de nascimento
 
-  Cen·rio: Preencher CEP em formato inv·lido
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
-    Quando informa um CEP em formato inv·lido
-    Ent„o deve visualizar mensagem de erro no campo CEP
+  Cen√°rio: Preencher CEP em formato inv√°lido
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
+    Quando informa um CEP em formato inv√°lido
+    Ent√£o deve visualizar mensagem de erro no campo CEP
 
-  Cen·rio: Marcar opÁ„o possui deficiÍncia
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
-    Quando marca a opÁ„o "Possui alguma deficiÍncia?"
-    Ent„o o sistema deve registrar a escolha do usu·rio
+  Cen√°rio: Marcar op√ß√£o possui defici√™ncia
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
+    Quando marca a op√ß√£o "Possui alguma defici√™ncia?"
+    Ent√£o o sistema deve registrar a escolha do usu√°rio
 
-  Cen·rio: Navegar para tela anterior
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
-    Quando clica no bot„o "Voltar"
-    Ent„o deve retornar para a tela anterior da inscriÁ„o
+  Cen√°rio: Navegar para tela anterior
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
+    Quando clica no bot√£o "Voltar"
+    Ent√£o deve retornar para a tela anterior da inscri√ß√£o
 
-  Cen·rio: Preencher parcialmente o formul·rio
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
-    Quando preenche apenas alguns campos obrigatÛrios
-    E tenta avanÁar
-    Ent„o deve visualizar quais campos obrigatÛrios n„o foram preenchidos
+  Cen√°rio: Preencher parcialmente o formul√°rio
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
+    Quando preenche apenas alguns campos obrigat√≥rios
+    E tenta avan√ßar
+    Ent√£o deve visualizar quais campos obrigat√≥rios n√£o foram preenchidos
 
-  Cen·rio: Inserir caracteres especiais em campos de texto
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
-    Quando insere caracteres inv·lidos em campos de texto
-    Ent„o deve visualizar mensagem de validaÁ„o
+  Cen√°rio: Inserir caracteres especiais em campos de texto
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
+    Quando insere caracteres inv√°lidos em campos de texto
+    Ent√£o deve visualizar mensagem de valida√ß√£o
 
-  Cen·rio: Informar CPF com mais de 12 caracteres
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
+  Cen√°rio: Informar CPF com mais de 12 caracteres
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
     Quando informa um CPF com mais de 12 caracteres
-    Ent„o o sistema deve impedir a digitaÁ„o adicional ou exibir validaÁ„o de limite m·ximo
+    Ent√£o o sistema deve impedir a digita√ß√£o adicional ou exibir valida√ß√£o de limite m√°ximo
 
-  Cen·rio: Informar CPF com quantidade m·xima permitida
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
-    Quando informa um CPF com atÈ 12 caracteres
-    Ent„o o sistema deve aceitar o valor informado
+  Cen√°rio: Informar CPF com quantidade m√°xima permitida
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
+    Quando informa um CPF com at√© 12 caracteres
+    Ent√£o o sistema deve aceitar o valor informado
 
-  Cen·rio: Informar telefone com menos de 10 caracteres
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
+  Cen√°rio: Informar telefone com menos de 10 caracteres
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
     Quando informa um telefone com menos de 10 caracteres
-    E tenta avanÁar
-    Ent„o deve visualizar mensagem informando quantidade mÌnima inv·lida
+    E tenta avan√ßar
+    Ent√£o deve visualizar mensagem informando quantidade m√≠nima inv√°lida
 
-  Cen·rio: Informar telefone com mais de 15 caracteres
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
+  Cen√°rio: Informar telefone com mais de 15 caracteres
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
     Quando informa um telefone com mais de 15 caracteres
-    Ent„o o sistema deve impedir a digitaÁ„o adicional ou exibir validaÁ„o de limite m·ximo
+    Ent√£o o sistema deve impedir a digita√ß√£o adicional ou exibir valida√ß√£o de limite m√°ximo
 
-  Cen·rio: Informar telefone dentro do limite permitido
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
+  Cen√°rio: Informar telefone dentro do limite permitido
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
     Quando informa um telefone entre 10 e 15 caracteres
-    Ent„o o sistema deve aceitar o valor informado
+    Ent√£o o sistema deve aceitar o valor informado
 
-  Cen·rio: Informar telefone com letras
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
+  Cen√°rio: Informar telefone com letras
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
     Quando informa letras no campo Telefone
-    Ent„o deve visualizar mensagem de validaÁ„o informando que apenas n˙meros s„o permitidos
+    Ent√£o deve visualizar mensagem de valida√ß√£o informando que apenas n√∫meros s√£o permitidos
 
-  Cen·rio: Informar telefone com caracteres especiais
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
+  Cen√°rio: Informar telefone com caracteres especiais
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
     Quando informa caracteres especiais no campo Telefone
-    Ent„o deve visualizar mensagem de validaÁ„o informando que apenas n˙meros s„o permitidos
+    Ent√£o deve visualizar mensagem de valida√ß√£o informando que apenas n√∫meros s√£o permitidos
 
-  Cen·rio: Informar telefone contendo n˙meros e letras
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
-    Quando informa n˙meros e letras no campo Telefone
-    Ent„o deve visualizar mensagem de validaÁ„o no campo Telefone
+  Cen√°rio: Informar telefone contendo n√∫meros e letras
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
+    Quando informa n√∫meros e letras no campo Telefone
+    Ent√£o deve visualizar mensagem de valida√ß√£o no campo Telefone
 
-  Cen·rio: Informar telefone apenas com n˙meros
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
-    Quando informa um telefone contendo apenas n˙meros
-    Ent„o o sistema deve aceitar o valor informado
+  Cen√°rio: Informar telefone apenas com n√∫meros
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
+    Quando informa um telefone contendo apenas n√∫meros
+    Ent√£o o sistema deve aceitar o valor informado
 
-  Cen·rio: Informar CEP com menos de 8 n˙meros
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
-    Quando informa um CEP com menos de 8 n˙meros
-    E tenta avanÁar
-    Ent„o deve visualizar mensagem de validaÁ„o de quantidade inv·lida
+  Cen√°rio: Informar CEP com menos de 8 n√∫meros
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
+    Quando informa um CEP com menos de 8 n√∫meros
+    E tenta avan√ßar
+    Ent√£o deve visualizar mensagem de valida√ß√£o de quantidade inv√°lida
 
-  Cen·rio: Informar CEP com mais de 8 n˙meros
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
-    Quando informa um CEP com mais de 8 n˙meros
-    Ent„o o sistema deve impedir a digitaÁ„o adicional ou exibir validaÁ„o de limite m·ximo
+  Cen√°rio: Informar CEP com mais de 8 n√∫meros
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
+    Quando informa um CEP com mais de 8 n√∫meros
+    Ent√£o o sistema deve impedir a digita√ß√£o adicional ou exibir valida√ß√£o de limite m√°ximo
 
-  Cen·rio: Informar CEP com exatamente 8 n˙meros
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
-    Quando informa um CEP com 8 n˙meros
-    Ent„o o sistema deve aceitar o valor informado
+  Cen√°rio: Informar CEP com exatamente 8 n√∫meros
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
+    Quando informa um CEP com 8 n√∫meros
+    Ent√£o o sistema deve aceitar o valor informado
 
-  Cen·rio: Informar CEP com caracteres n„o numÈricos
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
+  Cen√°rio: Informar CEP com caracteres n√£o num√©ricos
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
     Quando informa letras ou caracteres especiais no campo CEP
-    Ent„o deve visualizar mensagem de validaÁ„o informando que apenas n˙meros s„o permitidos
+    Ent√£o deve visualizar mensagem de valida√ß√£o informando que apenas n√∫meros s√£o permitidos
 
-  Cen·rio: Informar data de nascimento exatamente em 1880
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
+  Cen√°rio: Informar data de nascimento exatamente em 1880
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
     Quando informa uma data de nascimento no ano de 1880
-    Ent„o o sistema deve aceitar a data informada
+    Ent√£o o sistema deve aceitar a data informada
 
-  Cen·rio: Selecionar data inv·lida pelo calend·rio
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
-    Quando tenta selecionar uma data anterior a 1880 pelo calend·rio
-    Ent„o o sistema n„o deve permitir a seleÁ„o da data
+  Cen√°rio: Selecionar data inv√°lida pelo calend√°rio
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
+    Quando tenta selecionar uma data anterior a 1880 pelo calend√°rio
+    Ent√£o o sistema n√£o deve permitir a sele√ß√£o da data
 
-  Cen·rio: Digitar manualmente data anterior a 1880
-    Dado que o usu·rio est· no formul·rio de inscriÁ„o
+  Cen√°rio: Digitar manualmente data anterior a 1880
+    Dado que o usu√°rio est√° no formul√°rio de inscri√ß√£o
     Quando digita manualmente uma data anterior a 1880
-    E tenta avanÁar
-    Ent„o deve visualizar mensagem de validaÁ„o no campo Data de nascimento
+    E tenta avan√ßar
+    Ent√£o deve visualizar mensagem de valida√ß√£o no campo Data de nascimento

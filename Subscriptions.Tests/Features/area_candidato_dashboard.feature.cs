@@ -18,12 +18,12 @@ namespace Subscriptions.Tests.Features
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Reqnroll", "3.0.0.0")]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::NUnit.Framework.TestFixtureAttribute()]
-    [global::NUnit.Framework.DescriptionAttribute("Dashboard da �rea do candidato")]
+    [global::NUnit.Framework.DescriptionAttribute("Dashboard da área do candidato")]
     [global::NUnit.Framework.FixtureLifeCycleAttribute(global::NUnit.Framework.LifeCycle.InstancePerTestCase)]
     [global::NUnit.Framework.CategoryAttribute("chrome")]
     [global::NUnit.Framework.CategoryAttribute("edge")]
     [global::NUnit.Framework.CategoryAttribute("firefox")]
-    public partial class DashboardDaReaDoCandidatoFeature
+    public partial class DashboardDaAreaDoCandidatoFeature
     {
         
         private global::Reqnroll.ITestRunner testRunner;
@@ -33,41 +33,8 @@ namespace Subscriptions.Tests.Features
                 "edge",
                 "firefox"};
         
-        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new global::System.Globalization.CultureInfo("pt"), "Features", "Dashboard da �rea do candidato", @"  Como candidato autenticado
-  Eu quero visualizar minhas informa��es
-  Para acompanhar minha inscri��o
-
-  Cen�rio: Acessar dashboard ap�s login
-    Dado que o usu�rio realizou login com sucesso
-    Ent�o deve visualizar a mensagem de boas-vindas
-    E deve visualizar o menu lateral
-    E deve visualizar as op��es ""Minhas inscri��es"" e ""Financeiro""
-
-  Cen�rio: Visualizar campo de busca
-    Dado que o usu�rio est� no dashboard
-    Ent�o deve visualizar o campo de pesquisa
-
-  Cen�rio: Navegar para Minhas inscri��es
-    Dado que o usu�rio est� no dashboard
-    Quando clica em ""Minhas inscri��es""
-    Ent�o deve acessar a �rea de inscri��es
-    E deve ter bot�o ""voltar para home""
-    Ent�o deve ser poss�vel retornar ao ""home""
-
-  Cen�rio: Navegar para Financeiro
-    Dado que o usu�rio est� no dashboard
-    Quando clica em ""Financeiro""
-    Ent�o deve acessar a �rea financeira
-    E deve ter bot�o ""voltar para home""
-    Ent�o deve ser poss�vel retornar ao ""home""
-
-  Cen�rio: Utilizar campo de pesquisa
-    Dado que o usu�rio est� no dashboard
-    Quando informa um termo no campo de pesquisa
-    Ent�o deve visualizar resultados relacionados", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags, InitializeCucumberMessages());
-        
-#line 1 "area_candidato_dashboard.feature"
-#line hidden
+        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new global::System.Globalization.CultureInfo("pt"), "Features", "Dashboard da área do candidato", "  Como candidato autenticado\r\n  Eu quero visualizar minhas informações\r\n  Para ac" +
+                "ompanhar minha inscrição", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags, InitializeCucumberMessages());
         
         [global::NUnit.Framework.OneTimeSetUpAttribute()]
         public static async global::System.Threading.Tasks.Task FeatureSetupAsync()
@@ -142,7 +109,136 @@ namespace Subscriptions.Tests.Features
         
         private static global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages InitializeCucumberMessages()
         {
-            return new global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages("Features/area_candidato_dashboard.feature.ndjson", 2);
+            return new global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages("Features/area_candidato_dashboard.feature.ndjson", 7);
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Acessar dashboard após login")]
+        public async global::System.Threading.Tasks.Task AcessarDashboardAposLogin()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "0";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Acessar dashboard após login", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário realizou login com sucesso", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.ThenAsync("deve visualizar a mensagem de boas-vindas", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+                await testRunner.AndAsync("deve visualizar o menu lateral", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("deve visualizar as opções \"Minhas inscrições\" e \"Financeiro\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Visualizar campo de busca")]
+        public async global::System.Threading.Tasks.Task VisualizarCampoDeBusca()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "1";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Visualizar campo de busca", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no dashboard", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.ThenAsync("deve visualizar o campo de pesquisa", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Navegar para Minhas inscrições")]
+        public async global::System.Threading.Tasks.Task NavegarParaMinhasInscricoes()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "2";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Navegar para Minhas inscrições", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no dashboard", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("clica em \"Minhas inscrições\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("deve acessar a área de inscrições", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+                await testRunner.AndAsync("deve ter botão \"voltar para home\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.ThenAsync("deve ser possível retornar ao \"home\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Navegar para Financeiro")]
+        public async global::System.Threading.Tasks.Task NavegarParaFinanceiro()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "3";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Navegar para Financeiro", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no dashboard", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("clica em \"Financeiro\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("deve acessar a área financeira", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+                await testRunner.AndAsync("deve ter botão \"voltar para home\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.ThenAsync("deve ser possível retornar ao \"home\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Utilizar campo de pesquisa")]
+        public async global::System.Threading.Tasks.Task UtilizarCampoDePesquisa()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "4";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Utilizar campo de pesquisa", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está no dashboard", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("informa um termo no campo de pesquisa", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("deve visualizar resultados relacionados", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
         }
     }
 }

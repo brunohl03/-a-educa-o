@@ -18,12 +18,12 @@ namespace Subscriptions.Tests.Features
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Reqnroll", "3.0.0.0")]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::NUnit.Framework.TestFixtureAttribute()]
-    [global::NUnit.Framework.DescriptionAttribute("Acesso � �rea do candidato")]
+    [global::NUnit.Framework.DescriptionAttribute("Acesso à área do candidato")]
     [global::NUnit.Framework.FixtureLifeCycleAttribute(global::NUnit.Framework.LifeCycle.InstancePerTestCase)]
     [global::NUnit.Framework.CategoryAttribute("chrome")]
     [global::NUnit.Framework.CategoryAttribute("edge")]
     [global::NUnit.Framework.CategoryAttribute("firefox")]
-    public partial class AcessoReaDoCandidatoFeature
+    public partial class AcessoAAreaDoCandidatoFeature
     {
         
         private global::Reqnroll.ITestRunner testRunner;
@@ -33,33 +33,8 @@ namespace Subscriptions.Tests.Features
                 "edge",
                 "firefox"};
         
-        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new global::System.Globalization.CultureInfo("pt"), "Features", "Acesso � �rea do candidato", @"  Como candidato inscrito
-  Eu quero acessar a �rea do candidato
-  Para acompanhar minha inscri��o
-
-  Cen�rio: Visualizar tela de in�cio da jornada
-    Dado que o usu�rio concluiu o preenchimento do formul�rio de inscri��o
-    Ent�o deve visualizar a mensagem ""Sua jornada come�a aqui!""
-    E deve visualizar as instru��es de acesso do candidato
-    E deve visualizar o bot�o ""Acessar �rea do candidato""
-    E deve visualizar bot�o Privacidade
-    E deve visualizar bot�o home
-    E deve visualizar op��es de tema
-    E deve visualizar logotipo +a
-    E deve visualizar bot�o Portal de inscri��es
-
-  Cen�rio: Visualizar credenciais de acesso
-    Dado que o usu�rio est� na tela de in�cio da jornada
-    Ent�o deve visualizar o usu�rio de acesso
-    E deve visualizar a senha de acesso
-
-  Cen�rio: Acessar �rea do candidato
-    Dado que o usu�rio est� na tela de in�cio da jornada
-    Quando clica no bot�o ""Acessar �rea do candidato""
-    Ent�o deve ser redirecionado para a �rea do candidato", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags, InitializeCucumberMessages());
-        
-#line 1 "acessar_area_candidato.feature"
-#line hidden
+        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new global::System.Globalization.CultureInfo("pt"), "Features", "Acesso à área do candidato", "  Como candidato inscrito\r\n  Eu quero acessar a área do candidato\r\n  Para acompan" +
+                "har minha inscrição", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags, InitializeCucumberMessages());
         
         [global::NUnit.Framework.OneTimeSetUpAttribute()]
         public static async global::System.Threading.Tasks.Task FeatureSetupAsync()
@@ -134,7 +109,88 @@ namespace Subscriptions.Tests.Features
         
         private static global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages InitializeCucumberMessages()
         {
-            return new global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages("Features/acessar_area_candidato.feature.ndjson", 2);
+            return new global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages("Features/acessar_area_candidato.feature.ndjson", 5);
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Visualizar tela de início da jornada")]
+        public async global::System.Threading.Tasks.Task VisualizarTelaDeInicioDaJornada()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "0";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Visualizar tela de início da jornada", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário concluiu o preenchimento do formulário de inscrição", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.ThenAsync("deve visualizar a mensagem \"Sua jornada começa aqui!\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+                await testRunner.AndAsync("deve visualizar as instruções de acesso do candidato", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("deve visualizar o botão \"Acessar área do candidato\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("deve visualizar botão Privacidade", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("deve visualizar botão home", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("deve visualizar opções de tema", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("deve visualizar logotipo +a", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("deve visualizar botão Portal de inscrições", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Visualizar credenciais de acesso")]
+        public async global::System.Threading.Tasks.Task VisualizarCredenciaisDeAcesso()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "1";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Visualizar credenciais de acesso", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está na tela de início da jornada", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.ThenAsync("deve visualizar o usuário de acesso", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+                await testRunner.AndAsync("deve visualizar a senha de acesso", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Acessar área do candidato")]
+        public async global::System.Threading.Tasks.Task AcessarAreaDoCandidato()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "2";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Acessar área do candidato", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está na tela de início da jornada", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("clica no botão \"Acessar área do candidato\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("deve ser redirecionado para a área do candidato", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
         }
     }
 }

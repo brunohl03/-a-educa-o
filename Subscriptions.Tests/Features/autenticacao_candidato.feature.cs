@@ -18,12 +18,12 @@ namespace Subscriptions.Tests.Features
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Reqnroll", "3.0.0.0")]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::NUnit.Framework.TestFixtureAttribute()]
-    [global::NUnit.Framework.DescriptionAttribute("Autentica��o do candidato")]
+    [global::NUnit.Framework.DescriptionAttribute("Autenticação do candidato")]
     [global::NUnit.Framework.FixtureLifeCycleAttribute(global::NUnit.Framework.LifeCycle.InstancePerTestCase)]
     [global::NUnit.Framework.CategoryAttribute("chrome")]
     [global::NUnit.Framework.CategoryAttribute("edge")]
     [global::NUnit.Framework.CategoryAttribute("firefox")]
-    public partial class AutenticaODoCandidatoFeature
+    public partial class AutenticacaoDoCandidatoFeature
     {
         
         private global::Reqnroll.ITestRunner testRunner;
@@ -33,29 +33,8 @@ namespace Subscriptions.Tests.Features
                 "edge",
                 "firefox"};
         
-        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new global::System.Globalization.CultureInfo("pt"), "Features", "Autentica��o do candidato", "  Como candidato\r\n  Eu quero realizar login na �rea do candidato\r\n  Para acessar " +
-                "minha inscri��o\r\n\r\n  Cen�rio: Visualizar tela de autentica��o\r\n    Dado que o us" +
-                "u�rio acessa a tela de login\r\n    Ent�o deve visualizar o campo \"Usu�rio\"\r\n    E" +
-                " deve visualizar o campo \"Senha\"\r\n    E deve visualizar o bot�o \"Login\"\r\n    E d" +
-                "eve visualizar a op��o \"Recuperar usu�rio\"\r\n    E deve visualizar a op��o \"Redef" +
-                "inir senha\"\r\n    E bot�o Privacidade\r\n    E bot�o home\r\n    E op��es de tema\r\n  " +
-                "  E logotipo +a\r\n    E bot�o Portal de inscri��es\r\n\r\n  Cen�rio: Tentar realizar " +
-                "login com campos vazios\r\n    Dado que o usu�rio est� na tela de login\r\n    Quand" +
-                "o clica no bot�o \"Login\" sem preencher os campos\r\n    Ent�o deve visualizar mens" +
-                "agens de valida��o\r\n\r\n  Cen�rio: Realizar login com credenciais inv�lidas\r\n    D" +
-                "ado que o usu�rio est� na tela de login\r\n    Quando informa usu�rio ou senha inv" +
-                "�lidos\r\n    E clica no bot�o \"Login\"\r\n    Ent�o deve visualizar mensagem de erro" +
-                " de autentica��o\r\n\r\n  Cen�rio: Realizar login com sucesso\r\n    Dado que o usu�ri" +
-                "o est� na tela de login\r\n    Quando informa usu�rio e senha v�lidos\r\n    E clica" +
-                " no bot�o \"Login\"\r\n    Ent�o deve acessar a �rea do candidato\r\n\r\n  Cen�rio: Aces" +
-                "sar recupera��o de usu�rio\r\n    Dado que o usu�rio est� na tela de login\r\n    Qu" +
-                "ando clica em \"Recuperar usu�rio\"\r\n    Ent�o deve enviado email com instru��es p" +
-                "ara recupera��o\r\n\r\n  Cen�rio: Acessar redefini��o de senha\r\n    Dado que o usu�r" +
-                "io est� na tela de login\r\n    Quando clica em \"Redefinir senha\"\r\n    Ent�o deve " +
-                "enviado email com instru��es para recupera��o", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags, InitializeCucumberMessages());
-        
-#line 1 "autenticacao_candidato.feature"
-#line hidden
+        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new global::System.Globalization.CultureInfo("pt"), "Features", "Autenticação do candidato", "  Como candidato\r\n  Eu quero realizar login na área do candidato\r\n  Para acessar " +
+                "minha inscrição", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags, InitializeCucumberMessages());
         
         [global::NUnit.Framework.OneTimeSetUpAttribute()]
         public static async global::System.Threading.Tasks.Task FeatureSetupAsync()
@@ -130,7 +109,167 @@ namespace Subscriptions.Tests.Features
         
         private static global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages InitializeCucumberMessages()
         {
-            return new global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages("Features/autenticacao_candidato.feature.ndjson", 2);
+            return new global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages("Features/autenticacao_candidato.feature.ndjson", 8);
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Visualizar tela de autenticação")]
+        public async global::System.Threading.Tasks.Task VisualizarTelaDeAutenticacao()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "0";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Visualizar tela de autenticação", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário acessa a tela de login", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.ThenAsync("deve visualizar o campo \"Usuário\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+                await testRunner.AndAsync("deve visualizar o campo \"Senha\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("deve visualizar o botão \"Login\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("deve visualizar a opção \"Recuperar usuário\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("deve visualizar a opção \"Redefinir senha\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("botão Privacidade", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("botão home", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("opções de tema", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("logotipo +a", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("botão Portal de inscrições", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Tentar realizar login com campos vazios")]
+        public async global::System.Threading.Tasks.Task TentarRealizarLoginComCamposVazios()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "1";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Tentar realizar login com campos vazios", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está na tela de login", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("clica no botão \"Login\" sem preencher os campos", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("deve visualizar mensagens de validação", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Realizar login com credenciais inválidas")]
+        public async global::System.Threading.Tasks.Task RealizarLoginComCredenciaisInvalidas()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "2";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Realizar login com credenciais inválidas", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está na tela de login", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("informa usuário ou senha inválidos", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.AndAsync("clica no botão \"Login\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.ThenAsync("deve visualizar mensagem de erro de autenticação", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Realizar login com sucesso")]
+        public async global::System.Threading.Tasks.Task RealizarLoginComSucesso()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "3";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Realizar login com sucesso", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está na tela de login", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("informa usuário e senha válidos", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.AndAsync("clica no botão \"Login\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.ThenAsync("deve acessar a área do candidato", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Acessar recuperação de usuário")]
+        public async global::System.Threading.Tasks.Task AcessarRecuperacaoDeUsuario()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "4";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Acessar recuperação de usuário", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está na tela de login", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("clica em \"Recuperar usuário\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("deve enviado email com instruções para recuperação", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Acessar redefinição de senha")]
+        public async global::System.Threading.Tasks.Task AcessarRedefinicaoDeSenha()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "5";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Acessar redefinição de senha", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está na tela de login", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("clica em \"Redefinir senha\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("deve enviado email com instruções para recuperação", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
         }
     }
 }

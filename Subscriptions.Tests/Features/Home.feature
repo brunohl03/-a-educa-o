@@ -1,55 +1,55 @@
-#language: pt
+Ôªø#language: pt
 
 @chrome @edge @firefox
-Funcionalidade: P·gina inicial do portal de inscriÁıes
+Funcionalidade: P√°gina inicial do portal de inscri√ß√µes
  
   Como visitante do portal
-  Eu quero visualizar as opÁıes de ensino
-  Para iniciar minha inscriÁ„o
+  Eu quero visualizar as op√ß√µes de ensino
+  Para iniciar minha inscri√ß√£o
 
-  Cen·rio: Acessar p·gina inicial
-    Dado que o usu·rio acessa o portal de inscriÁıes
-    Ent„o deve visualizar o seletor de nÌvel de ensino
-    E bot„o Privacidade
-    E bot„o home
-    E opÁıes de tema
+  Cen√°rio: Acessar p√°gina inicial
+    Dado que o usu√°rio acessa o portal de inscri√ß√µes
+    Ent√£o deve visualizar o seletor de n√≠vel de ensino
+    E bot√£o Privacidade
+    E bot√£o home
+    E op√ß√µes de tema
     E logotipo +a
-    E bot„o Portal de inscriÁıes
+    E bot√£o Portal de inscri√ß√µes
 
-  Cen·rio: Visualizar nÌveis de ensino disponÌveis
-    Dado que o usu·rio est· na p·gina inicial
-    Quando expande o seletor de nÌvel de ensino
-    Ent„o deve visualizar a opÁ„o "GraduaÁ„o"
-    E deve visualizar a opÁ„o "PÛs-graduaÁ„o"
+  Cen√°rio: Visualizar n√≠veis de ensino dispon√≠veis
+    Dado que o usu√°rio est√° na p√°gina inicial
+    Quando expande o seletor de n√≠vel de ensino
+    Ent√£o deve visualizar a op√ß√£o "Gradua√ß√£o"
+    E deve visualizar a op√ß√£o "P√≥s-gradua√ß√£o"
 
-  Cen·rio: Acessar polÌtica de privacidade
-    Dado que o usu·rio est· na p·gina inicial
+  Cen√°rio: Acessar pol√≠tica de privacidade
+    Dado que o usu√°rio est√° na p√°gina inicial
     Quando clica em "Privacidade"
-    Ent„o deve visualizar a p·gina de privacidade
+    Ent√£o deve visualizar a p√°gina de privacidade
 
-  Cen·rio: Alterar para tema escuro
-    Dado que o usu·rio est· na p·gina inicial
+  Cen√°rio: Alterar para tema escuro
+    Dado que o usu√°rio est√° na p√°gina inicial
     Quando seleciona o tema "Escuro"
-    Ent„o a interface deve ser exibida em modo escuro
+    Ent√£o a interface deve ser exibida em modo escuro
 
-  Cen·rio: Alterar para tema claro
-    Dado que o usu·rio est· na p·gina inicial
+  Cen√°rio: Alterar para tema claro
+    Dado que o usu√°rio est√° na p√°gina inicial
     Quando seleciona o tema "Claro"
-    Ent„o a interface deve ser exibida em modo claro
+    Ent√£o a interface deve ser exibida em modo claro
 
-  Cen·rio: Alterar para tema do sistema
-    Dado que o usu·rio est· na p·gina inicial
+  Cen√°rio: Alterar para tema do sistema
+    Dado que o usu√°rio est√° na p√°gina inicial
     Quando seleciona o tema "Sistema"
-    Ent„o a interface deve seguir o tema do sistema operacional
+    Ent√£o a interface deve seguir o tema do sistema operacional
 
-  Cen·rio: Selecionar nÌvel GraduaÁ„o
-    Dado que o usu·rio est· na p·gina inicial
-    Quando expande o seletor de nÌvel de ensino
-    E seleciona o nÌvel "GraduaÁ„o"
-    Ent„o deve avanÁar para o fluxo de inscriÁ„o de GraduaÁ„o
+  Cen√°rio: Selecionar n√≠vel Gradua√ß√£o
+    Dado que o usu√°rio est√° na p√°gina inicial
+    Quando expande o seletor de n√≠vel de ensino
+    E seleciona o n√≠vel "Gradua√ß√£o"
+    Ent√£o deve avan√ßar para o fluxo de inscri√ß√£o de Gradua√ß√£o
 
-  Cen·rio: Selecionar nÌvel PÛs-graduaÁ„o
-    Dado que o usu·rio est· na p·gina inicial
-    Quando expande o seletor de nÌvel de ensino
-    E seleciona o nÌvel "PÛs-graduaÁ„o"
-    Ent„o deve avanÁar para o fluxo de inscriÁ„o de PÛs-graduaÁ„o
+  Cen√°rio: Selecionar n√≠vel P√≥s-gradua√ß√£o
+    Dado que o usu√°rio est√° na p√°gina inicial
+    Quando expande o seletor de n√≠vel de ensino
+    E seleciona o n√≠vel "P√≥s-gradua√ß√£o"
+    Ent√£o deve avan√ßar para o fluxo de inscri√ß√£o de P√≥s-gradua√ß√£o

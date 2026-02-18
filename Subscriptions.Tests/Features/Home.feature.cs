@@ -18,12 +18,12 @@ namespace Subscriptions.Tests.Features
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Reqnroll", "3.0.0.0")]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::NUnit.Framework.TestFixtureAttribute()]
-    [global::NUnit.Framework.DescriptionAttribute("P�gina inicial do portal de inscri��es")]
+    [global::NUnit.Framework.DescriptionAttribute("Página inicial do portal de inscrições")]
     [global::NUnit.Framework.FixtureLifeCycleAttribute(global::NUnit.Framework.LifeCycle.InstancePerTestCase)]
     [global::NUnit.Framework.CategoryAttribute("chrome")]
     [global::NUnit.Framework.CategoryAttribute("edge")]
     [global::NUnit.Framework.CategoryAttribute("firefox")]
-    public partial class PGinaInicialDoPortalDeInscriEsFeature
+    public partial class PaginaInicialDoPortalDeInscricoesFeature
     {
         
         private global::Reqnroll.ITestRunner testRunner;
@@ -33,32 +33,8 @@ namespace Subscriptions.Tests.Features
                 "edge",
                 "firefox"};
         
-        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new global::System.Globalization.CultureInfo("pt"), "Features", "P�gina inicial do portal de inscri��es", "  Como visitante do portal\r\n  Eu quero visualizar as op��es de ensino\r\n  Para ini" +
-                "ciar minha inscri��o\r\n\r\n  Cen�rio: Acessar p�gina inicial\r\n    Dado que o usu�ri" +
-                "o acessa o portal de inscri��es\r\n    Ent�o deve visualizar o seletor de n�vel de" +
-                " ensino\r\n    E bot�o Privacidade\r\n    E bot�o home\r\n    E op��es de tema\r\n    E " +
-                "logotipo +a\r\n    E bot�o Portal de inscri��es\r\n\r\n  Cen�rio: Visualizar n�veis de" +
-                " ensino dispon�veis\r\n    Dado que o usu�rio est� na p�gina inicial\r\n    Quando e" +
-                "xpande o seletor de n�vel de ensino\r\n    Ent�o deve visualizar a op��o \"Gradua��" +
-                "o\"\r\n    E deve visualizar a op��o \"P�s-gradua��o\"\r\n\r\n  Cen�rio: Acessar pol�tica" +
-                " de privacidade\r\n    Dado que o usu�rio est� na p�gina inicial\r\n    Quando clica" +
-                " em \"Privacidade\"\r\n    Ent�o deve visualizar a p�gina de privacidade\r\n\r\n  Cen�ri" +
-                "o: Alterar para tema escuro\r\n    Dado que o usu�rio est� na p�gina inicial\r\n    " +
-                "Quando seleciona o tema \"Escuro\"\r\n    Ent�o a interface deve ser exibida em modo" +
-                " escuro\r\n\r\n  Cen�rio: Alterar para tema claro\r\n    Dado que o usu�rio est� na p�" +
-                "gina inicial\r\n    Quando seleciona o tema \"Claro\"\r\n    Ent�o a interface deve se" +
-                "r exibida em modo claro\r\n\r\n  Cen�rio: Alterar para tema do sistema\r\n    Dado que" +
-                " o usu�rio est� na p�gina inicial\r\n    Quando seleciona o tema \"Sistema\"\r\n    En" +
-                "t�o a interface deve seguir o tema do sistema operacional\r\n\r\n  Cen�rio: Selecion" +
-                "ar n�vel Gradua��o\r\n    Dado que o usu�rio est� na p�gina inicial\r\n    Quando ex" +
-                "pande o seletor de n�vel de ensino\r\n    E seleciona o n�vel \"Gradua��o\"\r\n    Ent" +
-                "�o deve avan�ar para o fluxo de inscri��o de Gradua��o\r\n\r\n  Cen�rio: Selecionar " +
-                "n�vel P�s-gradua��o\r\n    Dado que o usu�rio est� na p�gina inicial\r\n    Quando e" +
-                "xpande o seletor de n�vel de ensino\r\n    E seleciona o n�vel \"P�s-gradua��o\"\r\n  " +
-                "  Ent�o deve avan�ar para o fluxo de inscri��o de P�s-gradua��o", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags, InitializeCucumberMessages());
-        
-#line 1 "Home.feature"
-#line hidden
+        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new global::System.Globalization.CultureInfo("pt"), "Features", "Página inicial do portal de inscrições", "  Como visitante do portal\r\n  Eu quero visualizar as opções de ensino\r\n  Para ini" +
+                "ciar minha inscrição", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags, InitializeCucumberMessages());
         
         [global::NUnit.Framework.OneTimeSetUpAttribute()]
         public static async global::System.Threading.Tasks.Task FeatureSetupAsync()
@@ -133,7 +109,214 @@ namespace Subscriptions.Tests.Features
         
         private static global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages InitializeCucumberMessages()
         {
-            return new global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages("Features/Home.feature.ndjson", 2);
+            return new global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages("Features/Home.feature.ndjson", 10);
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Acessar página inicial")]
+        public async global::System.Threading.Tasks.Task AcessarPaginaInicial()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "0";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Acessar página inicial", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário acessa o portal de inscrições", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.ThenAsync("deve visualizar o seletor de nível de ensino", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+                await testRunner.AndAsync("botão Privacidade", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("botão home", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("opções de tema", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("logotipo +a", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.AndAsync("botão Portal de inscrições", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Visualizar níveis de ensino disponíveis")]
+        public async global::System.Threading.Tasks.Task VisualizarNiveisDeEnsinoDisponiveis()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "1";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Visualizar níveis de ensino disponíveis", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está na página inicial", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("expande o seletor de nível de ensino", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("deve visualizar a opção \"Graduação\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+                await testRunner.AndAsync("deve visualizar a opção \"Pós-graduação\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Acessar política de privacidade")]
+        public async global::System.Threading.Tasks.Task AcessarPoliticaDePrivacidade()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "2";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Acessar política de privacidade", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está na página inicial", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("clica em \"Privacidade\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("deve visualizar a página de privacidade", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Alterar para tema escuro")]
+        public async global::System.Threading.Tasks.Task AlterarParaTemaEscuro()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "3";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Alterar para tema escuro", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está na página inicial", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("seleciona o tema \"Escuro\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("a interface deve ser exibida em modo escuro", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Alterar para tema claro")]
+        public async global::System.Threading.Tasks.Task AlterarParaTemaClaro()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "4";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Alterar para tema claro", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está na página inicial", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("seleciona o tema \"Claro\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("a interface deve ser exibida em modo claro", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Alterar para tema do sistema")]
+        public async global::System.Threading.Tasks.Task AlterarParaTemaDoSistema()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "5";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Alterar para tema do sistema", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está na página inicial", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("seleciona o tema \"Sistema\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.ThenAsync("a interface deve seguir o tema do sistema operacional", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Selecionar nível Graduação")]
+        public async global::System.Threading.Tasks.Task SelecionarNivelGraduacao()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "6";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Selecionar nível Graduação", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está na página inicial", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("expande o seletor de nível de ensino", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.AndAsync("seleciona o nível \"Graduação\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.ThenAsync("deve avançar para o fluxo de inscrição de Graduação", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Selecionar nível Pós-graduação")]
+        public async global::System.Threading.Tasks.Task SelecionarNivelPos_Graduacao()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "7";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Selecionar nível Pós-graduação", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+            this.ScenarioInitialize(scenarioInfo, ruleInfo);
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+                await testRunner.GivenAsync("que o usuário está na página inicial", ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
+                await testRunner.WhenAsync("expande o seletor de nível de ensino", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+                await testRunner.AndAsync("seleciona o nível \"Pós-graduação\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+                await testRunner.ThenAsync("deve avançar para o fluxo de inscrição de Pós-graduação", ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+            }
+            await this.ScenarioCleanupAsync();
         }
     }
 }

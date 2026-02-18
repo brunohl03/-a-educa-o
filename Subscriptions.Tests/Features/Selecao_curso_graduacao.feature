@@ -1,66 +1,66 @@
-#language: pt
+Ôªø#language: pt
 
 @chrome @edge @firefox
-Funcionalidade: SeleÁ„o de curso de GraduaÁ„o
+Funcionalidade: Sele√ß√£o de curso de Gradua√ß√£o
  
-  Como usu·rio do portal de inscriÁıes
-  Eu quero selecionar um curso de GraduaÁ„o
-  Para continuar minha inscriÁ„o
+  Como usu√°rio do portal de inscri√ß√µes
+  Eu quero selecionar um curso de Gradua√ß√£o
+  Para continuar minha inscri√ß√£o
 
-  Cen·rio: Visualizar tela de seleÁ„o de curso de GraduaÁ„o
-    Dado que o usu·rio selecionou o nÌvel "GraduaÁ„o"
-    Ent„o deve visualizar o tÌtulo "Selecione seu curso de GraduaÁ„o"
+  Cen√°rio: Visualizar tela de sele√ß√£o de curso de Gradua√ß√£o
+    Dado que o usu√°rio selecionou o n√≠vel "Gradua√ß√£o"
+    Ent√£o deve visualizar o t√≠tulo "Selecione seu curso de Gradua√ß√£o"
     E deve visualizar o seletor de cursos
-    E deve visualizar o bot„o "Voltar"
-    E deve visualizar o bot„o "AvanÁar"
-    E deve visualizar bot„o Privacidade
-    E deve visualizar bot„o home
-    E deve visualizar opÁıes de tema
+    E deve visualizar o bot√£o "Voltar"
+    E deve visualizar o bot√£o "Avan√ßar"
+    E deve visualizar bot√£o Privacidade
+    E deve visualizar bot√£o home
+    E deve visualizar op√ß√µes de tema
     E deve visualizar logotipo +a
-    E deve visualizar bot„o Portal de inscriÁıes
+    E deve visualizar bot√£o Portal de inscri√ß√µes
 
-  Cen·rio: Visualizar opÁıes de cursos disponÌveis
-    Dado que o usu·rio est· na tela de seleÁ„o de curso de GraduaÁ„o
+  Cen√°rio: Visualizar op√ß√µes de cursos dispon√≠veis
+    Dado que o usu√°rio est√° na tela de sele√ß√£o de curso de Gradua√ß√£o
     Quando expande o seletor de cursos
-    Ent„o deve visualizar a lista de cursos disponÌveis
+    Ent√£o deve visualizar a lista de cursos dispon√≠veis
 
-  Cen·rio: AvanÁar sem selecionar curso
-    Dado que o usu·rio est· na tela de seleÁ„o de curso de GraduaÁ„o
-    Quando clica no bot„o "AvanÁar"
-    Ent„o n„o deve avanÁar para o prÛximo passo
+  Cen√°rio: Avan√ßar sem selecionar curso
+    Dado que o usu√°rio est√° na tela de sele√ß√£o de curso de Gradua√ß√£o
+    Quando clica no bot√£o "Avan√ßar"
+    Ent√£o n√£o deve avan√ßar para o pr√≥ximo passo
 
-  Cen·rio: Selecionar curso e avanÁar
-    Dado que o usu·rio est· na tela de seleÁ„o de curso de GraduaÁ„o
+  Cen√°rio: Selecionar curso e avan√ßar
+    Dado que o usu√°rio est√° na tela de sele√ß√£o de curso de Gradua√ß√£o
     Quando seleciona um curso
-    E clica no bot„o "AvanÁar"
-    Ent„o deve avanÁar para a prÛxima etapa da inscriÁ„o
+    E clica no bot√£o "Avan√ßar"
+    Ent√£o deve avan√ßar para a pr√≥xima etapa da inscri√ß√£o
 
-  Cen·rio: Voltar para seleÁ„o de nÌvel
-    Dado que o usu·rio est· na tela de seleÁ„o de curso de GraduaÁ„o
-    Quando clica no bot„o "Voltar"
-    Ent„o deve retornar para a seleÁ„o de nÌvel de ensino
+  Cen√°rio: Voltar para sele√ß√£o de n√≠vel
+    Dado que o usu√°rio est√° na tela de sele√ß√£o de curso de Gradua√ß√£o
+    Quando clica no bot√£o "Voltar"
+    Ent√£o deve retornar para a sele√ß√£o de n√≠vel de ensino
 
-  Cen·rio: Exibir mensagem ao tentar avanÁar sem selecionar curso
-    Dado que o usu·rio est· na tela de seleÁ„o de curso de GraduaÁ„o
-    Quando clica no bot„o "AvanÁar" sem selecionar um curso
-    Ent„o deve visualizar uma mensagem informando que È necess·rio selecionar um curso
+  Cen√°rio: Exibir mensagem ao tentar avan√ßar sem selecionar curso
+    Dado que o usu√°rio est√° na tela de sele√ß√£o de curso de Gradua√ß√£o
+    Quando clica no bot√£o "Avan√ßar" sem selecionar um curso
+    Ent√£o deve visualizar uma mensagem informando que √© necess√°rio selecionar um curso
 
-  Cen·rio: Selecionar curso v·lido
-    Dado que o usu·rio est· na tela de seleÁ„o de curso de GraduaÁ„o
-    Quando seleciona um curso v·lido
-    Ent„o o curso selecionado deve ser exibido no seletor
+  Cen√°rio: Selecionar curso v√°lido
+    Dado que o usu√°rio est√° na tela de sele√ß√£o de curso de Gradua√ß√£o
+    Quando seleciona um curso v√°lido
+    Ent√£o o curso selecionado deve ser exibido no seletor
 
-  Cen·rio: Pesquisar curso existente
-    Dado que o usu·rio est· na tela de seleÁ„o de curso de GraduaÁ„o
+  Cen√°rio: Pesquisar curso existente
+    Dado que o usu√°rio est√° na tela de sele√ß√£o de curso de Gradua√ß√£o
     Quando digita o nome de um curso existente no campo de pesquisa
-    Ent„o deve visualizar cursos correspondentes ao termo pesquisado
+    Ent√£o deve visualizar cursos correspondentes ao termo pesquisado
 
-  Cen·rio: Pesquisar curso inexistente
-    Dado que o usu·rio est· na tela de seleÁ„o de curso de GraduaÁ„o
+  Cen√°rio: Pesquisar curso inexistente
+    Dado que o usu√°rio est√° na tela de sele√ß√£o de curso de Gradua√ß√£o
     Quando digita um curso inexistente no campo de pesquisa
-    Ent„o n„o deve visualizar resultados na lista
+    Ent√£o n√£o deve visualizar resultados na lista
 
-  Cen·rio: Limpar campo de pesquisa
-    Dado que o usu·rio realizou uma busca por curso
+  Cen√°rio: Limpar campo de pesquisa
+    Dado que o usu√°rio realizou uma busca por curso
     Quando limpa o campo de pesquisa
-    Ent„o deve visualizar novamente todos os cursos disponÌveis
+    Ent√£o deve visualizar novamente todos os cursos dispon√≠veis

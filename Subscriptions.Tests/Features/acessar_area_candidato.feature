@@ -1,29 +1,29 @@
-#language: pt
+Ôªø#language: pt
 
 @chrome @edge @firefox
-Funcionalidade: Acesso ‡ ·rea do candidato
+Funcionalidade: Acesso √† √°rea do candidato
 
   Como candidato inscrito
-  Eu quero acessar a ·rea do candidato
-  Para acompanhar minha inscriÁ„o
+  Eu quero acessar a √°rea do candidato
+  Para acompanhar minha inscri√ß√£o
 
-  Cen·rio: Visualizar tela de inÌcio da jornada
-    Dado que o usu·rio concluiu o preenchimento do formul·rio de inscriÁ„o
-    Ent„o deve visualizar a mensagem "Sua jornada comeÁa aqui!"
-    E deve visualizar as instruÁıes de acesso do candidato
-    E deve visualizar o bot„o "Acessar ·rea do candidato"
-    E deve visualizar bot„o Privacidade
-    E deve visualizar bot„o home
-    E deve visualizar opÁıes de tema
+  Cen√°rio: Visualizar tela de in√≠cio da jornada
+    Dado que o usu√°rio concluiu o preenchimento do formul√°rio de inscri√ß√£o
+    Ent√£o deve visualizar a mensagem "Sua jornada come√ßa aqui!"
+    E deve visualizar as instru√ß√µes de acesso do candidato
+    E deve visualizar o bot√£o "Acessar √°rea do candidato"
+    E deve visualizar bot√£o Privacidade
+    E deve visualizar bot√£o home
+    E deve visualizar op√ß√µes de tema
     E deve visualizar logotipo +a
-    E deve visualizar bot„o Portal de inscriÁıes
+    E deve visualizar bot√£o Portal de inscri√ß√µes
 
-  Cen·rio: Visualizar credenciais de acesso
-    Dado que o usu·rio est· na tela de inÌcio da jornada
-    Ent„o deve visualizar o usu·rio de acesso
+  Cen√°rio: Visualizar credenciais de acesso
+    Dado que o usu√°rio est√° na tela de in√≠cio da jornada
+    Ent√£o deve visualizar o usu√°rio de acesso
     E deve visualizar a senha de acesso
 
-  Cen·rio: Acessar ·rea do candidato
-    Dado que o usu·rio est· na tela de inÌcio da jornada
-    Quando clica no bot„o "Acessar ·rea do candidato"
-    Ent„o deve ser redirecionado para a ·rea do candidato
+  Cen√°rio: Acessar √°rea do candidato
+    Dado que o usu√°rio est√° na tela de in√≠cio da jornada
+    Quando clica no bot√£o "Acessar √°rea do candidato"
+    Ent√£o deve ser redirecionado para a √°rea do candidato

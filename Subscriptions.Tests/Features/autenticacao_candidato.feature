@@ -1,48 +1,48 @@
-#language: pt
+Ôªø#language: pt
 
 @chrome @edge @firefox
-Funcionalidade: AutenticaÁ„o do candidato
+Funcionalidade: Autentica√ß√£o do candidato
 
   Como candidato
-  Eu quero realizar login na ·rea do candidato
-  Para acessar minha inscriÁ„o
+  Eu quero realizar login na √°rea do candidato
+  Para acessar minha inscri√ß√£o
 
-  Cen·rio: Visualizar tela de autenticaÁ„o
-    Dado que o usu·rio acessa a tela de login
-    Ent„o deve visualizar o campo "Usu·rio"
+  Cen√°rio: Visualizar tela de autentica√ß√£o
+    Dado que o usu√°rio acessa a tela de login
+    Ent√£o deve visualizar o campo "Usu√°rio"
     E deve visualizar o campo "Senha"
-    E deve visualizar o bot„o "Login"
-    E deve visualizar a opÁ„o "Recuperar usu·rio"
-    E deve visualizar a opÁ„o "Redefinir senha"
-    E bot„o Privacidade
-    E bot„o home
-    E opÁıes de tema
+    E deve visualizar o bot√£o "Login"
+    E deve visualizar a op√ß√£o "Recuperar usu√°rio"
+    E deve visualizar a op√ß√£o "Redefinir senha"
+    E bot√£o Privacidade
+    E bot√£o home
+    E op√ß√µes de tema
     E logotipo +a
-    E bot„o Portal de inscriÁıes
+    E bot√£o Portal de inscri√ß√µes
 
-  Cen·rio: Tentar realizar login com campos vazios
-    Dado que o usu·rio est· na tela de login
-    Quando clica no bot„o "Login" sem preencher os campos
-    Ent„o deve visualizar mensagens de validaÁ„o
+  Cen√°rio: Tentar realizar login com campos vazios
+    Dado que o usu√°rio est√° na tela de login
+    Quando clica no bot√£o "Login" sem preencher os campos
+    Ent√£o deve visualizar mensagens de valida√ß√£o
 
-  Cen·rio: Realizar login com credenciais inv·lidas
-    Dado que o usu·rio est· na tela de login
-    Quando informa usu·rio ou senha inv·lidos
-    E clica no bot„o "Login"
-    Ent„o deve visualizar mensagem de erro de autenticaÁ„o
+  Cen√°rio: Realizar login com credenciais inv√°lidas
+    Dado que o usu√°rio est√° na tela de login
+    Quando informa usu√°rio ou senha inv√°lidos
+    E clica no bot√£o "Login"
+    Ent√£o deve visualizar mensagem de erro de autentica√ß√£o
 
-  Cen·rio: Realizar login com sucesso
-    Dado que o usu·rio est· na tela de login
-    Quando informa usu·rio e senha v·lidos
-    E clica no bot„o "Login"
-    Ent„o deve acessar a ·rea do candidato
+  Cen√°rio: Realizar login com sucesso
+    Dado que o usu√°rio est√° na tela de login
+    Quando informa usu√°rio e senha v√°lidos
+    E clica no bot√£o "Login"
+    Ent√£o deve acessar a √°rea do candidato
 
-  Cen·rio: Acessar recuperaÁ„o de usu·rio
-    Dado que o usu·rio est· na tela de login
-    Quando clica em "Recuperar usu·rio"
-    Ent„o deve enviado email com instruÁıes para recuperaÁ„o
+  Cen√°rio: Acessar recupera√ß√£o de usu√°rio
+    Dado que o usu√°rio est√° na tela de login
+    Quando clica em "Recuperar usu√°rio"
+    Ent√£o deve enviado email com instru√ß√µes para recupera√ß√£o
 
-  Cen·rio: Acessar redefiniÁ„o de senha
-    Dado que o usu·rio est· na tela de login
+  Cen√°rio: Acessar redefini√ß√£o de senha
+    Dado que o usu√°rio est√° na tela de login
     Quando clica em "Redefinir senha"
-    Ent„o deve enviado email com instruÁıes para recuperaÁ„o
+    Ent√£o deve enviado email com instru√ß√µes para recupera√ß√£o
