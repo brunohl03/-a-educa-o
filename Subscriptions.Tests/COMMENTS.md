@@ -81,7 +81,6 @@ Se houvesse mais tempo disponível, seriam implementadas as seguintes melhorias:
 - Execução utilizando Selenium Grid com Docker Compose
 - Integração contínua para execução automática dos testes
 - Estratégia automatizada de limpeza e preparação de dados
-- Testes adicionais focados em validações visuais
 - Monitoramento da estabilidade dos testes automatizados
 
 ------------------------------------------------------------
@@ -94,8 +93,6 @@ Até o momento não foram implementados:
 - Execução em Selenium Grid
 - Scripts de performance com k6
 - Geração automática de relatórios de execução
-
-Esses itens fazem parte das etapas diferenciais do desafio.
 
 ------------------------------------------------------------
 
